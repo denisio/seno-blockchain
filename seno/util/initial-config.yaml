@@ -306,7 +306,7 @@ full_node:
       port: 18446
   introducer_peer:
       host: introducer.seno.uno  # Seno introducer IPv4/IPv6
-      port: 18444
+      port: 18445
   wallet_peer:
     host: *self_hostname
     port: 18449
@@ -388,7 +388,7 @@ wallet:
 
   introducer_peer:
     host: introducer.seno.uno # Seno introducer IPv4/IPv6
-    port: 18444
+    port: 18445
 
   ssl:
     private_crt:  "config/ssl/wallet/private_wallet.crt"
