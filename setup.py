@@ -106,7 +106,7 @@ kwargs = dict(
         "seno.ssl": ["seno_ca.crt", "seno_ca.key", "dst_root_ca.pem"],
         "mozilla-ca": ["cacert.pem"],
     },
-    use_scm_version={"fallback_version": "unknown-no-.git-directory", 'write_to': 'version.py', 'version_scheme':'local_scheme'},
+    use_scm_version={"fallback_version": "unknown-no-.git-directory"},
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     zip_safe=False,
