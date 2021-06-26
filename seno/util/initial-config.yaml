@@ -255,7 +255,7 @@ full_node:
   rpc_port: 18555
 
   # Use UPnP to attempt to allow other full nodes to reach your node behind a gateway
-  enable_upnp: False
+  enable_upnp: True
 
   # If node is more than these blocks behind, will do a sync (long sync)
   sync_blocks_behind_threshold: 300
