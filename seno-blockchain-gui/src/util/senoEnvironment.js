@@ -45,7 +45,7 @@ const getExecutablePath = (dist_file) => {
   return path.join(__dirname, PY_MAC_DIST_FOLDER, dist_file);
 };
 
-const getChiaVersion = () => {
+const getSenoVersion = () => {
   let version = null;
   const exePath = getExecutablePath('seno');
   // first see if we can get a seno exe in a standard location relative to where we are
@@ -71,7 +71,7 @@ const getChiaVersion = () => {
   return version;
 };
 
-const startChiaDaemon = () => {
+const startSenoDaemon = () => {
   let script = getScriptPath(PY_DIST_FILE);
   let processOptions = {};
   //processOptions.detached = true;
@@ -138,7 +138,7 @@ const startChiaDaemon = () => {
 };
 
 module.exports = {
-  startChiaDaemon,
-  getChiaVersion,
+  startSenoDaemon,
+  getSenoVersion,
   guessPackaged,
 };
