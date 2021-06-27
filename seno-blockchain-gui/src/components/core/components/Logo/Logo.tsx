@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Box, BoxProps } from '@material-ui/core';
-import { Chia } from '@chia/icons';
+import { Chia } from '@seno/icons';
 
 const StyledChia = styled(Chia)`
   max-width: 100%;
