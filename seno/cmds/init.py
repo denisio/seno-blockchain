@@ -16,7 +16,7 @@ def init_cmd(ctx: click.Context, create_certs: str):
 
     \b
     Follow these steps to create new certificates for a remote harvester:
-    - Make a copy of your Farming Machine CA directory: ~/.seno/[version]/config/ssl/ca
+    - Make a copy of your Farming Machine CA directory: ~/.seno2/[version]/config/ssl/ca
     - Shut down all seno daemon processes with `seno stop all -d`
     - Run `seno init -c [directory]` on your remote harvester,
       where [directory] is the the copy of your Farming Machine CA directory
