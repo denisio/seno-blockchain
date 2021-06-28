@@ -12,7 +12,7 @@ const convert = (amount, from, to) => {
   return Number.parseFloat(amountInFromUnit.div(units.getUnit(to)));
 };
 
-class Chia {
+class Seno {
   constructor(value, unit) {
     this._value = value;
     this._unit = unit;
@@ -73,7 +73,7 @@ class Chia {
   }
 }
 
-export const seno_formatter = (value, unit) => new Chia(value, unit);
+export const seno_formatter = (value, unit) => new Seno(value, unit);
 
 seno_formatter.convert = convert;
 seno_formatter.setDisplay = units.setDisplay;

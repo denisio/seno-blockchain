@@ -15,7 +15,7 @@ export default function AppTimeBomb() {
   if (isVisible) {
     return (
       <Alert severity="warning">
-        <Trans>This version of Chia is no longer compatible with the blockchain and can not safely farm.</Trans>
+        <Trans>This version of Seno is no longer compatible with the blockchain and can not safely farm.</Trans>
       </Alert>
     );
   }

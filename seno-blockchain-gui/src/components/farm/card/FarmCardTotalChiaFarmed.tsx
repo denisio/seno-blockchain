@@ -6,7 +6,7 @@ import FarmCard from './FarmCard';
 import { mojo_to_seno } from '../../../util/seno';
 import useCurrencyCode from '../../../hooks/useCurrencyCode';
 
-export default function FarmCardTotalChiaFarmed() {
+export default function FarmCardTotalSenoFarmed() {
   const currencyCode = useCurrencyCode();
 
   const loading = useSelector(
@@ -17,7 +17,7 @@ export default function FarmCardTotalChiaFarmed() {
     (state: RootState) => state.wallet_state.farmed_amount?.farmed_amount,
   );
 
-  const totalChiaFarmed = useMemo(() => {
+  const totalSenoFarmed = useMemo(() => {
     if (farmedAmount !== undefined) {
       const val = BigInt(farmedAmount.toString());
       return mojo_to_seno(val);
@@ -26,8 +26,8 @@ export default function FarmCardTotalChiaFarmed() {
 
   return (
     <FarmCard
-      title={<Trans>{currencyCode} Total Chia Farmed</Trans>}
-      value={totalChiaFarmed}
+      title={<Trans>{currencyCode} Total Seno Farmed</Trans>}
+      value={totalSenoFarmed}
       loading={loading}
     />
   );

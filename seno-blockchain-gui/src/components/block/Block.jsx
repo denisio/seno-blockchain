@@ -309,7 +309,7 @@ export default function Block() {
         title={(
           <BlockTitle>
             <Trans>
-              Block at height {blockRecord.height} in the Chia
+              Block at height {blockRecord.height} in the Seno
               blockchain
             </Trans>
           </BlockTitle>

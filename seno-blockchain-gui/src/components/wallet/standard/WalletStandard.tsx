@@ -262,9 +262,9 @@ function BalanceCard(props: BalanceCardProps) {
         balance={balance_spendable}
         tooltip={
           <Trans>
-            This is the amount of Chia that you can currently use to make
+            This is the amount of Seno that you can currently use to make
             transactions. It does not include pending farming rewards, pending
-            incoming transactions, and Chia that you have just spent but is not
+            incoming transactions, and Seno that you have just spent but is not
             yet in the blockchain.
           </Trans>
         }

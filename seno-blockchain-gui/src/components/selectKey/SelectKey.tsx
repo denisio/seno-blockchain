@@ -113,7 +113,7 @@ export default function SelectKey() {
               </Typography>
               <Typography variant="subtitle1">
                 <Trans>
-                  Welcome to Chia. Please log in with an existing key, or create
+                  Welcome to Seno. Please log in with an existing key, or create
                   a new key.
                 </Trans>
               </Typography>

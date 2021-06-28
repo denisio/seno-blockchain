@@ -1,7 +1,7 @@
 import type WalletType from '../constants/WalletType';
 import type Wallet from '../types/Wallet';
 
-// export const initial_wallet = createWallet(0, "Chia Wallet", "STANDARD_WALLET", "");
+// export const initial_wallet = createWallet(0, "Seno Wallet", "STANDARD_WALLET", "");
 
 export default function createWallet(
   id: number,

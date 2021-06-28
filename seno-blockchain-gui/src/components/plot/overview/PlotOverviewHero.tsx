@@ -28,7 +28,7 @@ export default function PlotOverviewHero() {
           <PlotHeroIcon fontSize="large" />
           <Typography variant="body1">
             <Trans>
-              {'Plots are allocated space on your hard drive used to farm and earn Chia. '}
+              {'Plots are allocated space on your hard drive used to farm and earn Seno. '}
               <Link target="_blank" href="https://github.com/Chia-Network/chia-blockchain/wiki/Network-Architecture">Learn more</Link>
             </Trans>
           </Typography>
