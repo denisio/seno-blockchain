@@ -6,17 +6,17 @@ import pathlib
 from seno.util.path import mkdir, path_from_root
 
 # to use the profiler, enable it config file, "enable_profiler"
-# the output will be printed to your seno root path, e.g. ~/.seno/mainnet/profile/
+# the output will be printed to your seno root path, e.g. ~/.seno2/mainnet/profile/
 # to analyze the profile, run:
 
-#   python seno/utils/profiler.py ~/.seno/mainnet/profile | less -r
+#   python seno/utils/profiler.py ~/.seno2/mainnet/profile | less -r
 
 # this will print CPU usage of the seno full node main thread at 1 second increments.
 # find a time window of interest and analyze the profile file (which are in pstats format).
 
 # for example:
 
-#   python seno/utils/profiler.py ~/.seno/mainnet/profile 10 20
+#   python seno/utils/profiler.py ~/.seno2/mainnet/profile 10 20
 
 
 async def profile_task(root_path: pathlib.Path, log: logging.Logger) -> None:
