@@ -5,7 +5,7 @@ const BLOCKS_PER_YEAR = 1681920;
 
 export function calculatePoolReward(height: number): Big {
   if (height === 0) {
-    return MOJO_PER_SENO.times(21000000).times(7 / 8);
+    return MOJO_PER_SENO.times(10).times(7 / 8);
   }
   if (height < 3 * BLOCKS_PER_YEAR) {
     return MOJO_PER_SENO.times(2).times(7 / 8);
@@ -25,7 +25,7 @@ export function calculatePoolReward(height: number): Big {
 
 export function calculateBaseFarmerReward(height: number): Big {
   if (height === 0) {
-    return MOJO_PER_SENO.times(21000000).times(1 / 8);
+    return MOJO_PER_SENO.times(10).times(1 / 8);
   }
   if (height < 3 * BLOCKS_PER_YEAR) {
     return MOJO_PER_SENO.times(2).times(1 / 8);
