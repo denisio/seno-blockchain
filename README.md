@@ -1,6 +1,6 @@
 # seno-blockchain
 
-![Alt text](https://seno.uno/seno100.jpg)
+![Alt text](https://seno.uno/seno_color100.png)
 
 https://seno.uno
 
