@@ -12,8 +12,8 @@ from cryptography.x509.oid import NameOID
 
 
 def get_seno_ca_crt_key() -> Tuple[Any, Any]:
-    crt = pkg_resources.resource_string(__name__, "seno_ca.crt")
-    key = pkg_resources.resource_string(__name__, "seno_ca.key")
+    crt = pkg_resources.resource_string(__name__, "seno2_ca.crt")
+    key = pkg_resources.resource_string(__name__, "seno2_ca.key")
     return crt, key
 
 
@@ -99,7 +99,7 @@ def make_ca_cert(cert_path: Path, key_path: Path):
 
 
 def main():
-    return make_ca_cert(Path("./seno_ca.crt"), Path("./seno_ca.key"))
+    return make_ca_cert(Path("./seno2_ca.crt"), Path("./seno2_ca.key"))
 
 
 if __name__ == "__main__":

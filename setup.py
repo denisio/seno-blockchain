@@ -103,7 +103,7 @@ kwargs = dict(
         "seno": ["pyinstaller.spec"],
         "seno.wallet.puzzles": ["*.clvm", "*.clvm.hex"],
         "seno.util": ["initial-*.yaml", "english.txt"],
-        "seno.ssl": ["seno_ca.crt", "seno_ca.key", "dst_root_ca.pem"],
+        "seno.ssl": ["seno2_ca.crt", "seno2_ca.key", "dst_root_ca.pem"],
         "mozilla-ca": ["cacert.pem"],
     },
     use_scm_version={"fallback_version": "unknown-no-.git-directory"},

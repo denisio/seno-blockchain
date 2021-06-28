@@ -97,8 +97,8 @@ private_ssl_ca:
   key: "config/ssl/ca/private_ca.key"
 
 seno_ssl_ca:
-  crt: "config/ssl/ca/seno_ca.crt"
-  key: "config/ssl/ca/seno_ca.key"
+  crt: "config/ssl/ca/seno2_ca.crt"
+  key: "config/ssl/ca/seno2_ca.key"
 
 
 daemon_ssl:
@@ -142,8 +142,8 @@ harvester:
     key: "config/ssl/ca/private_ca.key"
 
   seno_ssl_ca:
-    crt: "config/ssl/ca/seno_ca.crt"
-    key: "config/ssl/ca/seno_ca.key"
+    crt: "config/ssl/ca/seno2_ca.crt"
+    key: "config/ssl/ca/seno2_ca.key"
 
 pool:
   # Replace this with a real puzzle hash
