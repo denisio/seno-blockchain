@@ -329,6 +329,9 @@ class SenoServer:
         """
         if self.is_duplicate_or_self_connection(target_node):
             return False
+            
+        if target_node.port == 8444:
+            return False
 
         if target_node.host in self.banned_peers and time.time() < self.banned_peers[target_node.host]:
             self.log.warning(f"Peer {target_node.host} is still banned, not connecting to it")
