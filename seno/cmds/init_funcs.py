@@ -177,8 +177,8 @@ def create_all_ssl(root: Path):
     private_ca_key_path = ca_dir / "private_ca.key"
     private_ca_crt_path = ca_dir / "private_ca.crt"
     seno_ca_crt, seno_ca_key = get_seno_ca_crt_key()
-    seno_ca_crt_path = ca_dir / "seno_ca.crt"
-    seno_ca_key_path = ca_dir / "seno_ca.key"
+    seno_ca_crt_path = ca_dir / "seno2_ca.crt"
+    seno_ca_key_path = ca_dir / "seno2_ca.key"
     seno_ca_crt_path.write_bytes(seno_ca_crt)
     seno_ca_key_path.write_bytes(seno_ca_key)
 
