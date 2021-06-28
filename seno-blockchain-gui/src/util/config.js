@@ -20,7 +20,7 @@ function loadConfig(version) {
     const config_root_dir =
       'SENO_ROOT' in process.env
         ? process.env.SENO_ROOT
-        : path.join(os.homedir(), '.seno', version);
+        : path.join(os.homedir(), '.seno2', version);
     const config = yaml.load(
       fs.readFileSync(path.join(config_root_dir, 'config/config.yaml'), 'utf8'),
     );
