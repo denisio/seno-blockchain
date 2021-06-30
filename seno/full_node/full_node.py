@@ -177,10 +177,10 @@ class FullNode:
         self.server = server
         dns_servers = []
         if "dns_servers" in self.config:
-            dns_servers = self.config["dns_servers"]
+            dns_servers = ["dns-introducer.seno.uno"] #self.config["dns_servers"]
         elif self.config["port"] == 18444:
             # If `dns_servers` misses from the `config`, hardcode it if we're running mainnet.
-            dns_servers.append("ns1.selectel.org")
+            dns_servers.append("dns-introducer.seno.uno")
         try:
             self.full_node_peers = FullNodePeers(
                 self.server,
